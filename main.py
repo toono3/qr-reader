@@ -61,7 +61,7 @@ def display(frame, decoded_objs):
         #frame  = datetime.now().strftime('%H:%M:%S.%f')
         
         fontType = cv2.FONT_HERSHEY_SIMPLEX
-        frame  = cv2.putText(frame, "SAMPLE_TEXT", (width, height), fontType, 7, (0, 0, 255), 3, cv2.CV_AA)
+        frame  = cv2.putText(frame, "SAMPLE_TEXT", (width, height), fontType, 7, (0, 0, 255), 3, (255,255,0))
         
         
     return frame
