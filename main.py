@@ -57,7 +57,7 @@ def display(frame, decoded_objs):
                               (left + width, height + top),
                               (255, 0, 0), 2)
         #frame = cv2.rectangle(frame, (width/2, height/2), (width-1, height-1), (255, 0, 0), -1)
-        frame  = cv2.circle(frame, (width/2-200, height/2), 100, (0, 0, 255), 10)
+        frame  = cv2.circle(frame, (width/2, height/2), 100, (0, 0, 255), 10)
         
         
     return frame
