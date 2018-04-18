@@ -58,7 +58,7 @@ def display(frame, decoded_objs):
                               (255, 0, 0), 2)
         #frame = cv2.rectangle(frame, (width/2, height/2), (width-1, height-1), (255, 0, 0), -1)
         frame  = cv2.circle(frame, (width, height), 100, (0, 0, 255), 10)
-        frame  = obj.data
+        frame  = datetime.now().strftime('%H:%M:%S.%f')
         
         
     return frame
