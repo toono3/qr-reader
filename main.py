@@ -52,10 +52,12 @@ def decode(frame):
 def display(frame, decoded_objs):
     for decoded_obj in decoded_objs:
         left, top, width, height = decoded_obj.rect
-        frame = cv2.rectangle(frame,
-                              (left, top),
-                              (left + width, height + top),
-                              (255, 0, 0), 2)
+        #frame = cv2.rectangle(frame,
+         #                     (left, top),
+          #                    (left + width, height + top),
+           #                   (255, 0, 0), 2)
+        frame = cv2.rectangle(frame, (width/2, height/2), (width-1, height-1), (255, 0, 0), -1)
+        
     return frame
     
 if __name__ == '__main__':
