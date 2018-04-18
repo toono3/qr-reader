@@ -59,6 +59,8 @@ def display(frame, decoded_objs):
         #frame = cv2.rectangle(frame, (width/2, height/2), (width-1, height-1), (255, 0, 0), -1)
         frame  = cv2.circle(frame, (width, height), 100, (0, 0, 255), 10)
         #frame  = datetime.now().strftime('%H:%M:%S.%f')
+        
+        fontType = cv2.FONT_HERSHEY_SIMPLEX
         frame  = cv2.putText(frame, "SAMPLE_TEXT", (width, height), fontType, 7, (0, 0, 255), 3, cv2.CV_AA)
         
         
